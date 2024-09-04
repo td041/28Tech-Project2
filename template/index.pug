@@ -1,0 +1,274 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Monito Pets Shop
+        link(rel="stylesheet" href="./assets/css/reset.css")
+        link(rel="stylesheet" href="./assets/css/style.css")
+        link(rel="preconnect" href="https://cdnjs.cloudflare.com")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css")
+    body
+        //- Header
+        header.header
+            .container
+                .header__wrap
+                    //- Menu Mobile
+                    button.header__menu-mobile
+                        i(class="fa-solid fa-bars")
+                    //- Logo
+                    .header__logo
+                        a(href="index.html")
+                            img(src="./assets/img/logo.svg" alt="Logo")
+                    //- Menu
+                    nav.header__menu
+                        ul
+                            li
+                                a(href="index.html") Trang Chủ
+                            li
+                                a(href="#") Danh Mục
+                            li
+                                a(href="#") Giới Thiệu
+                            li
+                                a(href="#") Liên Hệ
+                    //- Search
+                    button.header__search-mobile
+                        i(class="fa-solid fa-magnifying-glass")
+                    form.header__form(action="#!")
+                        button
+                            i(class="fa-solid fa-magnifying-glass")
+                        input(type="text" name="" placeholder="Nhập từ khóa...")
+                    //- Button
+                    a(href="#!" class="header__button button") Tham Gia Cộng Đồng
+        
+        //- Main
+        main.main
+            //- Section-1
+            section.section-1
+                .container
+                    .section-1__wrap
+                        img(src="./assets/img/Rectangle 9.svg" alt="" class="section-1__bg-4")
+                        .section-1__content
+                            img(src="./assets/img/Rectangle 3.svg" alt="" class="section-1__bg-1")
+                            .section-1__title
+                                .section-1__main-title Thêm Một Bạn
+                                .section-1__sub-title Thêm Ngàn Niềm Vui!
+                            .section-1__desc Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+                            .section-1__button
+                                a(href="#!" class="button-outline") Giới Thiệu
+                                    i(class="fa-regular fa-circle-play")
+                                a(href="#!" class="button") Khám Phá Ngay
+                            img(src="./assets/img/Rectangle 8.svg" alt="" class="section-1__bg-2")
+                        .section-1__image
+                            img(src="./assets/img/Group 2.svg" alt="" class="section-1__bg-3")
+                            img(src="./assets/img/main-image.png" alt="" class="section-1__image-main")
+            //- Section-2
+            section.section-2
+                .container
+                    .box
+                        .box-left
+                            p.box-left__desc Có gì mới?
+                            h2.box-left__title Một số vật nuôi của chúng tôi
+                        .box-right
+                            a(href="#" class="button-outline") Xem thêm
+                    .section-2__wrap
+                        .section-2__item
+                            a(href="#!")
+                                .section-2__image
+                                    img(src="./assets/img/image 1.png" alt="Product Image")
+                                .section-2__content
+                                    h2.section-2__product-info MO231 - Pomeranian Trắng
+                                    .section-2__info
+                                        .section-2__info-item Giống: 
+                                            b Đực
+                                        .section-2__info-item Tuổi:  
+                                            b 02 tháng
+                                    .section-2__price 6.900.000 VND
+                        .section-2__item
+                            a(href="#!")
+                                .section-2__image
+                                    img(src="./assets/img/image 2.png" alt="Product Image")
+                                .section-2__content
+                                    h2.section-2__product-info MO502 - Poodle Tiny Vàng 
+                                    .section-2__info
+                                        .section-2__info-item Giống: 
+                                            b Cái                              
+                                        .section-2__info-item Tuổi:  
+                                            b 02 tháng
+                                    .section-2__price 3.900.000 VND
+                        .section-2__item
+                            a(href="#!")
+                                .section-2__image
+                                    img(src="./assets/img/image 3.png" alt="Product Image")
+                                .section-2__content
+                                    h2.section-2__product-info MO102 - Poodle Tiny Sepia 
+                                    .section-2__info
+                                        .section-2__info-item Giống: 
+                                            b Đực                              
+                                        .section-2__info-item Tuổi:  
+                                            b 02 tháng
+                                    .section-2__price 4.000.000 VND
+                        .section-2__item
+                            a(href="#!")
+                                .section-2__image
+                                    img(src="./assets/img/image 4.png" alt="Product Image")
+                                .section-2__content
+                                    h2.section-2__product-info MO512 - Alaskan Malamute
+                                    .section-2__info
+                                        .section-2__info-item Giống: 
+                                            b Đực                              
+                                        .section-2__info-item Tuổi:  
+                                            b 02 tháng
+                                    .section-2__price 8.900.000 VND
+                        .section-2__item
+                            a(href="#!")
+                                .section-2__image
+                                    img(src="./assets/img/image 5.png" alt="Product Image")
+                                .section-2__content
+                                    h2.section-2__product-info MO502 - Pembroke Corgi
+                                    .section-2__info
+                                        .section-2__info-item Giống: 
+                                            b Đực                              
+                                        .section-2__info-item Tuổi:  
+                                            b 03 tháng
+                                    .section-2__price 7.900.000 VND
+                        .section-2__item
+                            a(href="#!")
+                                .section-2__image
+                                    img(src="./assets/img/image 6.png" alt="Product Image")
+                                .section-2__content
+                                    h2.section-2__product-info MO231 - Pomeranian Trắng
+                                    .section-2__info
+                                        .section-2__info-item Giống: 
+                                            b Cái                             
+                                        .section-2__info-item Tuổi:  
+                                            b 03 tháng
+                                    .section-2__price 9.000.000 VND
+                        .section-2__item
+                            a(href="#!")
+                                .section-2__image
+                                    img(src="./assets/img/image 7.png" alt="Product Image")
+                                .section-2__content
+                                    h2.section-2__product-info MO512 - Poodle Tiny
+                                    .section-2__info
+                                        .section-2__info-item Giống: 
+                                            b Đực                           
+                                        .section-2__info-item Tuổi:  
+                                            b 02 tháng
+                                    .section-2__price 6.500.000 VND
+                        .section-2__item
+                            a(href="#!")
+                                .section-2__image
+                                    img(src="./assets/img/image 8.png" alt="Product Image")
+                                .section-2__content
+                                    h2.section-2__product-info MO512 - Poodle Tiny
+                                    .section-2__info
+                                        .section-2__info-item Giống: 
+                                            b Đực                           
+                                        .section-2__info-item Tuổi:  
+                                            b 02 tháng
+                                    .section-2__price 6.900.000 VND        
+                    .section-2__button-bottom
+                        a(href="#" class="button-outline") Xem thêm 
+                            i(class="fa-solid fa-angle-right")
+            
+            //- Section-3
+            section.section-3
+                .container
+                    .section-3__wrap
+                        .section-3__image
+                            img(src="./assets/img/image-2.png" alt="")            
+                        .section-3__content
+                            .section-3__title
+                                .section-3__main-title Thêm Một Bạn
+                                .section-3__sub-title Thêm Ngàn Niềm Vui!
+                            .section-3__desc Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+                            .section-3__button
+                                a(href="#!" class="button-outline") Giới Thiệu 
+                                    i(class="fa-regular fa-circle-play")
+                                a(href="#!" class="button") Khám Phá Ngay
+            
+            //- Section-4
+            section.section-4
+                .container
+                    .box
+                        .box-left
+                            p.box-left__desc Có thể bạn đã biết?
+                            h2.box-left__title Kiến thức thú cưng hữu ích
+                        .box-right
+                            a(href="#" class="button-outline") Xem thêm 
+                                i(class="fa-solid fa-angle-right")
+                    .section-4__wrap
+                        .section-4__blog-item
+                            a(href="#!")
+                                .section-4__image
+                                    img(src="./assets/img/blog-1.jpg" alt="Blog Image")
+                                .section-4__content
+                                    .section-4__blog-tag Kiến thức thú cưng
+                                    h2.section-4__blog-title Pomeranian là gì? Cách nhận biết chó Pomeranian
+                                    p.section-4__blog-desc Pomeranian hay còn gọi là chó Pomeranian chó Pom luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+                        .section-4__blog-item
+                            a(href="#!")
+                                .section-4__image
+                                    img(src="./assets/img/blog-2.jpg" alt="Blog Image")
+                                .section-4__content
+                                    .section-4__blog-tag Kiến thức thú cưng
+                                    h2.section-4__blog-title Chế độ ăn cho chó bạn cần biết
+                                    p.section-4__blog-desc Việc chia khẩu phần ăn cho chó thoạt nghe có vẻ đơn giản nhưng có một số quy tắc bạn nên biết để chó cưng dễ dàng hấp thụ các chất dinh dưỡng trong khẩu phần ăn. Dành cho những người mới bắt đầu nuôi chó, đặc biệt là chó con mới sinh có sức đề kháng tương đối yếu.
+                        .section-4__blog-item
+                            a(href="#!")
+                                .section-4__image
+                                    img(src="./assets/img/blog-3.jpg" alt="Blog Image")
+                                .section-4__content
+                                    .section-4__blog-tag Kiến thức thú cưng
+                                    h2.section-4__blog-title Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả
+                                    p.section-4__blog-desc Việc chia khẩu phần ăn cho chó thoạt nghe có vẻ đơn giản nhưng có một số quy tắc bạn nên biết để chó cưng dễ dàng hấp thụ các chất dinh dưỡng trong khẩu phần ăn. Dành cho những người mới bắt đầu nuôi chó, đặc biệt là chó con mới sinh có sức đề kháng tương đối yếu.
+                    .section-4__button-bottom
+                        a(href="#!" class="button-outline") Xem thêm 
+                            i(class="fa-solid fa-angle-right")
+        
+        //- Footer
+        footer.footer
+            .container
+                .footer__wrap
+                    .footer__top
+                        .footer__heading Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+                        form.footer__form(action="")
+                            input(type="email" placeholder="Nhập email của bạn...")
+                            button.footer__button Đăng Kí Ngay
+                    .footer__middle
+                        nav.footer__links
+                            ul
+                                li
+                                    a(href="#!") Trang Chủ
+                                li
+                                    a(href="#!") Danh Mục
+                                li
+                                    a(href="#!") Giới Thiệu
+                                li
+                                    a(href="#!") Liên Hệ
+                        nav.footer__icons
+                            ul
+                                li
+                                    a(href="#!")
+                                        i(class="fa-brands fa-facebook")
+                                li
+                                    a(href="#!")
+                                        i(class="fa-brands fa-x-twitter")
+                                li
+                                    a(href="#!")
+                                        i(class="fa-brands fa-instagram")
+                                li
+                                    a(href="#!")
+                                        i(class="fa-brands fa-youtube")
+                    .footer__bottom
+                        .footer__copyright © 2023 28Tech. All rights reserved.
+                        .footer__logo
+                            a(href="index.html")
+                                img(src="./assets/img/logo.svg" alt="Logo")
+                        .footer__links-bottom
+                            ul
+                                li
+                                    a(href="#!") Điều khoản dịch vụ
+                                li
+                                    a(href="#!") Chính sách bảo mật
