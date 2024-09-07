@@ -1,0 +1,177 @@
+extends layouts/default.pug
+include mixins/product-item.pug
+block title 
+    title Product-List 
+block main
+    main.main
+        //- Breadcrumb
+        .breadcrumb 
+            .container 
+                nav.breadcrumb__wrap 
+                    ul 
+                        li 
+                            a(href="#!") Trang chủ 
+                        li 
+                            a(href="#!") Chó
+                        li 
+                            a(href="#!") Chó nhỏ
+        //- Section-3
+        include partials/section-3.pug
+        //- Section-5
+        section.section-5 
+            .container
+                .section-5__wrap 
+                    .section-5__left 
+                        .box-filter 
+                            .box-filter__title
+                                img(src="./assets/img/filter.svg", alt="")
+                                h2.box-filter__title-heading Bộ lọc
+                            .box-filter__group 
+                                .box-filter__group-label Giống
+                                .box-filter__check-list 
+                                    .box-filter__check-item 
+                                        input(type="checkbox", name="")
+                                        label(for="") Đực
+                                    .box-filter__check-item 
+                                        input(type="checkbox", name="")
+                                        label(for="") Cái
+                            .box-filter__group 
+                                .box-filter__group-label Màu sắc
+                                .box-filter__check-list 
+                                    .box-filter__check-item 
+                                        input(type="checkbox", name="")
+                                        label(for="") Xám
+                                    .box-filter__check-item 
+                                        input(type="checkbox", name="")
+                                        label(for="") Đen
+                                    .box-filter__check-item 
+                                        input(type="checkbox", name="")
+                                        label(for="") Trắng
+                            .box-filter__group 
+                                .box-filter__group-label Kích thước 
+                                .box-filter__check-list 
+                                    .box-filter__check-item 
+                                        input(type="checkbox", name="")
+                                        label(for="") Nhỏ
+                                    .box-filter__check-item 
+                                        input(type="checkbox", name="")
+                                        label(for="") Vừa
+                                    .box-filter__check-item 
+                                        input(type="checkbox", name="")
+                                        label(for="") Lớn
+                    .section-5__right 
+                        h2.section-5__heading Chó Nhỏ
+                        -
+                            var pets = [
+                                {
+                                    name: 'MO231 - Pomeranian Trắng',
+                                    gender: 'Đực',
+                                    age: '02 tháng',
+                                    price: '6.900.000 VND',
+                                    imgSrc: './assets/img/image 1.png'
+                                },
+                                {
+                                    name: 'MO502 - Poodle Tiny Vàng',
+                                    gender: 'Cái',
+                                    age: '02 tháng',
+                                    price: '3.900.000 VND',
+                                    imgSrc: './assets/img/image 2.png'
+                                },
+                                {
+                                    name: 'MO102 - Poodle Tiny Sepia',
+                                    gender: 'Đực',
+                                    age: '02 tháng',
+                                    price: '4.000.000 VND',
+                                    imgSrc: './assets/img/image 3.png'
+                                },
+                                {
+                                    name: 'MO512 - Alaskan Malamute',
+                                    gender: 'Đực',
+                                    age: '02 tháng',
+                                    price: '8.900.000 VND',
+                                    imgSrc: './assets/img/image 4.png'
+                                },
+                                {
+                                    name: 'MO502 - Pembroke Corgi',
+                                    gender: 'Đực',
+                                    age: '03 tháng',
+                                    price: '7.900.000 VND',
+                                    imgSrc: './assets/img/image 5.png'
+                                },
+                                {
+                                    name: 'MO231 - Pomeranian Trắng',
+                                    gender: 'Cái',
+                                    age: '02 tháng',
+                                    price: '9.000.000 VND',
+                                    imgSrc: './assets/img/image 6.png'
+                                },
+                                {
+                                    name: 'MO512 - Poodle Tiny',
+                                    gender: 'Đực',
+                                    age: '02 tháng',
+                                    price: '6.500.000 VND',
+                                    imgSrc: './assets/img/image 7.png'
+                                },
+                                {
+                                    name: 'MO512 - Poodle Tiny',
+                                    gender: 'Đực',
+                                    age: '02 tháng',
+                                    price: '6.900.000 VND',
+                                    imgSrc: './assets/img/image 8.png'
+                                }
+                                ,
+                                {
+                                    name: 'MO102 - Poodle Tiny Sepia',
+                                    gender: 'Đực',
+                                    age: '02 tháng',
+                                    price: '4.000.000 VND',
+                                    imgSrc: './assets/img/image 3.png'
+                                },
+                                {
+                                    name: 'MO512 - Alaskan Malamute',
+                                    gender: 'Đực',
+                                    age: '02 tháng',
+                                    price: '8.900.000 VND',
+                                    imgSrc: './assets/img/image 4.png'
+                                },
+                                {
+                                    name: 'MO502 - Pembroke Corgi',
+                                    gender: 'Đực',
+                                    age: '03 tháng',
+                                    price: '7.900.000 VND',
+                                    imgSrc: './assets/img/image 5.png'
+                                },
+                                {
+                                    name: 'MO231 - Pomeranian Trắng',
+                                    gender: 'Cái',
+                                    age: '02 tháng',
+                                    price: '9.000.000 VND',
+                                    imgSrc: './assets/img/image 6.png'
+                                }
+                            ];
+                        .section-5__list
+                             each pet in pets
+                                +product-item(pet)
+                        nav.pagination 
+                            ul 
+                                li 
+                                    a(href="#!" class="pagination__item") 
+                                        i(class="fa-solid fa-arrow-left") 
+                                li 
+                                    a(href="#!" class="pagination__item pagination__item--active") 1
+                                li 
+                                    a(href="#!" class="pagination__item") 2
+                                li 
+                                    a(href="#!" class="pagination__item") 3
+                                li 
+                                    a(href="#!" class="pagination__item") 4
+                                li 
+                                    a(href="#!" class="pagination__item") ...
+                                li 
+                                    a(href="#!" class="pagination__item") 28
+                                li 
+                                    a(href="#!" class="pagination__item") 
+                                        i(class="fa-solid fa-arrow-right")
+                        
+                                    
+
